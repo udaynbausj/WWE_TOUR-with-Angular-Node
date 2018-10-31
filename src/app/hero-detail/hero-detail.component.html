@@ -7,6 +7,12 @@
       Name : {{hero.name}}
       <br>
       <img src={{hero.photo}} style="height: 300px;width: 300px">
+      <br>
+      <code>Add messages here for {{hero.name}} : </code>
+      <form  method="post" (click)="getMessage()">
+        <input type="text">
+        <button type="submit">submit</button>
+      </form>
     </label>
   </div>
 </div>

@@ -14,7 +14,9 @@ export class HeroDetailComponent implements OnInit {
 
   ngOnInit() {
   }
-
   @Input() hero : Hero;
-
+  @Input() hero_messages: string;
+  getMessage(hero_messages : string): void{
+    this.hero_messages = hero_messages;
+  }
 }
